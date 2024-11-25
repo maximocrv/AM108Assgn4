@@ -145,11 +145,9 @@ C---- FROM THE CURRENT GAUSS POINT L.
       
       do i = 1, NST           ! Loop over rows of S
           do j = 1, NST       ! Loop over columns of S
-              do k = 1, 4     ! Loop over rows of DMAT and B
-                  do m = 1, 4 ! Loop over columns of DMAT
-                      do n = 1, NST   ! Loop over columns of B
-                  S(i,j) = S(i,j)+XSJ*XJC*WG(L)*B(k,i)*DMAT(k,m)*B(m,j)
-                      end do
+              do k = 1, 4     ! Loop over rows of B (transposed) and DMAT
+                  do m = 1, 4 ! Loop over columns of DMAT and rows of B
+                     S(i,j)=S(i,j)+XSJ*XJC*WG(L)*B(k,i)*DMAT(k,m)*B(m,j)
                   end do
               end do
           end do
@@ -246,9 +244,9 @@ C
 
       ! Integration order
       IF (NEL == 4) THEN 
-      NQP = 2  !(2*2 INTEGRATION ORDER)
+          NQP = 2  !(2*2 INTEGRATION ORDER)
       ELSEIF (NEL > 4) THEN 
-      NQP = 3  !(3*3 INTEGRATION ORDER) 
+          NQP = 3  !(3*3 INTEGRATION ORDER) 
       END IF 
       
       CALL PGAUS2(NQP,LINT,SG,TG,WG)
@@ -270,12 +268,12 @@ C---- BODY FORCES ARISING FROM CURRENT GAUSS POINT 'L'
 C---- FROM THE EXTERNAL FORCE SO OBTAINED SUBTRACT INTERNAL FORCES 
 C---- DUE TO ELEMENT STRESSES AT CURRENT GAUSS POINT L           
   
-      !P = P - XSJ*XJC*WG(L)*MATMUL(B,STRL(:,L))
+      !P = P - XSJ*XJC*WG(L)*MATMUL(TRANSPOSE(B),STRL(:,L))
       
       ! Step: Perform the operation directly on P
       DO i = 1, 2 * NEL
           DO j = 1, NS
-              P(i) = P(i) - XSJ * XJC * WG(L) * B(j, i) * STRL(j, L)
+              P(i) = P(i) - XSJ * XJC * WG(L) * B(j,i) * STRL(j,L)
           END DO
       END DO
       
@@ -340,6 +338,11 @@ C----        AND NQP=3  IF NEL >4
       
 C---- NEXT LOOP OVER INTEGRATION POINTS
       DO 900 L=1,LINT
+          
+          ! initialize both EPSL and STRL
+          
+          
+          
       LL = LL + 1
 C---- SET UP SHAPE FUNCTIONS AND DERIVATIVES AT CURRENT GAUSS POINT
       CALL SHAP2D(SG(L),TG(L),XL,SHP,XSJ,NDM,NEL,IX,.TRUE.)
@@ -358,14 +361,14 @@ C---- NOTE: LL = 1 to 9 correspond to 3x3 GP and  LL = 10 to 1x1 GP if NEL>4.
       
       DO I = 1,NEL
           DO J = 1,4
-              EPSL(J,LL)=EPSL(J,LL)+B(J,2*I-1)*UL(I,1)+B(J,2*I)*UL(I,2)
+              EPSL(J,LL)=EPSL(J,LL)+B(J,2*I-1)*UL(1,I)+B(J,2*I)*UL(2,I)
           END DO
       END DO
       
       IF (MODE == 1 .OR. MODE == 2) THEN
-          EPSL(1,LL) = 0
+          EPSL(1,LL) = 0.d0
       ELSEIF (MODE == 3) THEN
-          EPSL(1,LL) = -D(6)/(1-D(6))
+          EPSL(1,LL) = -D(6)/(1-D(6))*(EPSL(2,LL)+EPSL(3,LL))
       END IF
       
 C---- NEXT USING 'DMAT(NSDM,NSDM)' AND THE STRAINS '(EPSL(I,LL),I=1,NSDM)'  
@@ -401,7 +404,7 @@ C----                   = 1.0 FOR PLANE STRAIN/PLANE STRESS (MODE=1 OR 2)
           DO I = 1, NEL
               RADIUS = RADIUS + SHP(3, I) * XL(1, I)
           END DO
-          XJC = 2 * PI * RADIUS
+          XJC = 2.d0 * PI * RADIUS
       END IF
       
        
@@ -447,13 +450,13 @@ C
 C---- INITALIZE
       DO 10 I=1,4
       DO 10 J=1,4
-      DMAT(I,J) = 0.d0
+          DMAT(I,J) = 0.d0
 10    CONTINUE                               
 C---- COMPLETE
 C---- LEAVE 1ST ROW  & 1st COLUMN OF DMAT (CORRESP TO S33) AS ZERO FOR PLANE STRESS
 C
       IF (MODE == 1 .OR. MODE == 2) THEN 
-          DMAT(1,1) = (1-D(6))*D(5)/((1+D(6))*(1-2*D(6)))
+          DMAT(1,1) = (1.d0-D(6))*D(5)/((1.d0+D(6))*(1.d0-2*D(6)))
           DMAT(1,2) = (D(6))*D(5)/((1+D(6))*(1-2*D(6)))
           DMAT(1,3) = (D(6))*D(5)/((1+D(6))*(1-2*D(6)))
           
