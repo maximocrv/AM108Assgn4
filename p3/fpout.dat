@@ -1,0 +1,200 @@
+ F I N I T E   E L E M E N T   A N A L Y S I S   P R O G R A M
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NUMBER OF NODAL POINTS       =     9
+     NUMBER OF ELEMENTS           =     4
+     NUMBER OF MATERIAL SETS      =     1
+     DIMENSION OF COORDINATE SPACE=     2
+     DEGREES OF FREEDOM/NODE      =     2
+     NODES/ELEMENT (MAXIMUM)      =     4
+     DIMENSION OF STRESS ARRAY    =     4
+     DIMENSION OF INT VAR ARRAY   =     1
+     NUMBER OF QUAD PTS/ELEMENT   =     5
+     NUMBER OF PROP LD CARDS      =     0
+     NUMBER OF DISTR EDG LOADS    =     0
+     AUTO STEPPING CODE           =     0
+     NUMBER OF SLAVE NODES        =     0
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL COORDINATES
+
+      NODE      1 COORD      2 COORD
+         1       0.0000       0.0000
+         2       1.0000       0.0000
+         3       2.0000       0.0000
+         4       0.0000       1.0000
+         5       1.2000       1.3000
+         6       2.0000       1.0000
+         7       0.0000       2.0000
+         8       1.0000       2.0000
+         9       2.0000       2.0000
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     ELEMENTS
+
+   ELEMENT  MATERIAL  1 NODE  2 NODE  3 NODE  4 NODE
+         1         1       1       2       5       4
+         2         1       2       3       6       5
+         3         1       4       5       8       7
+         4         1       5       6       9       8
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     MATERIAL PROPERTIES
+
+     MATERIAL SET  1 FOR ELEMENT TYPE 1
+
+          DEGREE OF FREEDOM ASSIGNMENTS    LOCAL    GLOBAL 
+                                          NUMBER    NUMBER
+                                             1         1
+                                             2         2
+ --- Material Data Input Echo ---
+ D(1): Body Force X or R component =   0.000000000000000E+000
+ D(2): Body Force Y or Z component =   0.000000000000000E+000
+ D(3): Mode Switch =    2.00000000000000     
+ D(4): Mass Density (0.0 for static problems) =   0.000000000000000E+000
+ D(5): Young's Modulus =    100.000000000000     
+ D(6): Poisson's Ratio =   0.300000000000000     
+ --------------------------------
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL B.C.       
+
+      NODE      1 B.C.       2 B.C. 
+         1            1            1
+         2            0            1
+         3            0            1
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL FORCE/DISPL
+
+      NODE      1 FORCE      2 FORCE
+         7       0.0000       1.0472
+         8       0.0000       6.2832
+         9       0.0000       5.2360
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL PRPID      
+
+      NODE      1 PRPID      2 PRPID
+         7            1            1
+         8            1            1
+         9            1            1
+
+      SET NUMBER  1 HAS TOTAL OF   2 ELEMENTS OR NODES
+
+     1     2
+
+      SET NUMBER  2 HAS TOTAL OF   1 ELEMENTS OR NODES
+
+     5
+
+      SET NUMBER  3 HAS TOTAL OF   3 ELEMENTS OR NODES
+
+     1     2     3
+
+
+     SIZE OF STIFFNESS MATRIX IN PROFILE FORM=       123
+   MEMORY REQUEST =      1271, CORE = 400000000
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     MACRO INSTRUCTIONS
+
+     MACRO STATEMENT     VARIABLE 1     VARIABLE 2
+   MEMORY REQUEST =      1399, CORE = 400000000
+          TANG           0.0000         0.0000    
+          FORM           0.0000         0.0000    
+          SOLV           0.0000         0.0000    
+          CEQS           0.0000         0.0000    
+          DISP           0.0000         0.0000    
+          STRE           0.0000         0.0000    
+          REAC           0.0000         0.0000    
+          PRTS STRE      1.0000         0.0000    
+          PRTS STRA      1.0000         0.0000    
+          PRTS DISP      2.0000         0.0000    
+          PRTS REAC      3.0000         0.0000    
+          HIST DISP      5.0000         2.0000    
+          END            0.0000         0.0000    
+  **MACRO INSTRUCTION   1 **TANG        V1=  0.000     ,V2=  0.000    
+
+
+     PERFORMING UPDATE OF TANGENT STIFFNESS MATRIX
+   MEMORY REQUEST =      1645, CORE = 400000000
+  **MACRO INSTRUCTION   2 **FORM        V1=  0.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   3 **SOLV        V1=  0.000     ,V2=  0.000    
+  **ENERGY COMPUTED IN ACTCOL IS  0.2513285877E+00
+  **MACRO INSTRUCTION   4 **CEQS        V1=  0.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   5 **DISP        V1=  0.000     ,V2=  0.000    
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL DISPLACEMENTS     TIME  0.00000E+00
+  PROP. LD.  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+
+      NODE      1 COORD      2 COORD      1 DISPL      2 DISPL
+         1  0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+         2  0.1000000E+01  0.0000000E+00 -0.3000007E-02  0.0000000E+00
+         3  0.2000000E+01  0.0000000E+00 -0.6000014E-02  0.0000000E+00
+         4  0.0000000E+00  0.1000000E+01  0.0000000E+00  0.1000002E-01
+         5  0.1200000E+01  0.1300000E+01 -0.3600008E-02  0.1300003E-01
+         6  0.2000000E+01  0.1000000E+01 -0.6000014E-02  0.1000002E-01
+         7  0.0000000E+00  0.2000000E+01  0.0000000E+00  0.2000005E-01
+         8  0.1000000E+01  0.2000000E+01 -0.3000007E-02  0.2000005E-01
+         9  0.2000000E+01  0.2000000E+01 -0.6000014E-02  0.2000005E-01
+  **MACRO INSTRUCTION   6 **STRE        V1=  0.000     ,V2=  0.000    
+ --- Output Element Variables ---
+ Element Number =            1
+ R Coordinate of the Gauss Point =   0.550000000000000     
+ Z Coordinate of the Gauss Point =   0.575000000000000     
+ Stress at Gauss Point =   2.220446049250313E-016  2.220446049250313E-016
+   1.00000233843500      -1.000802005371235E-016
+ Strain at Gauss Point =  -3.000007015304992E-003 -3.000007015304991E-003
+  1.000002338434998E-002 -2.602085213965211E-018
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            2
+ R Coordinate of the Gauss Point =    1.55000000000000     
+ Z Coordinate of the Gauss Point =   0.575000000000000     
+ Stress at Gauss Point =   1.110223024625157E-016  2.220446049250313E-016
+   1.00000233843500      -3.336006684570783E-017
+ Strain at Gauss Point =  -3.000007015304991E-003 -3.000007015304991E-003
+  1.000002338434997E-002 -8.673617379884035E-019
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            3
+ R Coordinate of the Gauss Point =   0.550000000000000     
+ Z Coordinate of the Gauss Point =    1.57500000000000     
+ Stress at Gauss Point =   1.110223024625157E-016  1.110223024625157E-016
+   1.00000233843500       0.000000000000000E+000
+ Strain at Gauss Point =  -3.000007015304990E-003 -3.000007015304991E-003
+  1.000002338434997E-002  0.000000000000000E+000
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            4
+ R Coordinate of the Gauss Point =    1.55000000000000     
+ Z Coordinate of the Gauss Point =    1.57500000000000     
+ Stress at Gauss Point =   0.000000000000000E+000  1.110223024625157E-016
+   1.00000233843500      -6.672013369141565E-017
+ Strain at Gauss Point =  -3.000007015304990E-003 -3.000007015304989E-003
+  1.000002338434997E-002 -1.734723475976807E-018
+ --------------------------------
+  **MACRO INSTRUCTION   7 **REAC        V1=  0.000     ,V2=  0.000    
+ FEAP : PATCH TEST : AXISYMMETRIC PATCH TEST                                     
+
+     NODAL REACTIONS
+
+      NODE        1 DOF        2 DOF
+         1   0.3187E-15  -0.1047E+01
+         2   0.5356E-15  -0.6283E+01
+         3  -0.6430E-15  -0.5236E+01
+
+       SUM   0.2286E-14  -0.1776E-14
+
+   ABS SUM   0.7760E-14   0.2513E+02
+  **MACRO INSTRUCTION   8 **PRTS  STRE  V1=  1.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   9 **PRTS  STRA  V1=  1.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  10 **PRTS  DISP  V1=  2.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  11 **PRTS  REAC  V1=  3.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  12 **HIST  DISP  V1=  5.000     ,V2=  2.000    
+  **END OF MACRO EXECUTION**
+
+
+     *** ANALYSIS HAS BEEN COMPLETED
