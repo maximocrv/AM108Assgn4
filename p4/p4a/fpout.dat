@@ -293,9 +293,17 @@
 
       SET NUMBER  2 HAS TOTAL OF  10 ELEMENTS OR NODES
 
-    31    32    33    34    35    36    37    38    39    40
+    21    22    23    24    25    26    27    28    29    30
 
       SET NUMBER  3 HAS TOTAL OF  10 ELEMENTS OR NODES
+
+    31    32    33    34    35    36    37    38    39    40
+
+      SET NUMBER  4 HAS TOTAL OF  10 ELEMENTS OR NODES
+
+    41    42    43    44    45    46    47    48    49    50
+
+      SET NUMBER  5 HAS TOTAL OF  10 ELEMENTS OR NODES
 
     71    72    73    74    75    76    77    78    79    80
 
@@ -318,16 +326,21 @@
           PRTS STRE      1.0000         0.0000    
           PRTS STRE      2.0000         0.0000    
           PRTS STRE      3.0000         0.0000    
+          PRTS STRE      4.0000         0.0000    
+          PRTS STRE      5.0000         0.0000    
           PRTS DISP      1.0000         0.0000    
           PRTS DISP      2.0000         0.0000    
+   MEMORY REQUEST =     13067, CORE = 400000000
           PRTS DISP      3.0000         0.0000    
+          PRTS DISP      4.0000         0.0000    
+          PRTS DISP      5.0000         0.0000    
           END            0.0000         0.0000    
   **MACRO INSTRUCTION   1 **PRIN        V1=  0.000     ,V2=  0.000    
   **MACRO INSTRUCTION   2 **TANG        V1=  0.000     ,V2=  0.000    
 
 
      PERFORMING UPDATE OF TANGENT STIFFNESS MATRIX
-   MEMORY REQUEST =     21997, CORE = 400000000
+   MEMORY REQUEST =     22125, CORE = 400000000
   **MACRO INSTRUCTION   3 **FORM        V1=  0.000     ,V2=  0.000    
   **MACRO INSTRUCTION   4 **SOLV        V1=  0.000     ,V2=  0.000    
   **ENERGY COMPUTED IN ACTCOL IS  0.2961194712E-01
@@ -1168,9 +1181,13 @@
   **MACRO INSTRUCTION   8 **PRTS  STRE  V1=  1.000     ,V2=  0.000    
   **MACRO INSTRUCTION   9 **PRTS  STRE  V1=  2.000     ,V2=  0.000    
   **MACRO INSTRUCTION  10 **PRTS  STRE  V1=  3.000     ,V2=  0.000    
-  **MACRO INSTRUCTION  11 **PRTS  DISP  V1=  1.000     ,V2=  0.000    
-  **MACRO INSTRUCTION  12 **PRTS  DISP  V1=  2.000     ,V2=  0.000    
-  **MACRO INSTRUCTION  13 **PRTS  DISP  V1=  3.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  11 **PRTS  STRE  V1=  4.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  12 **PRTS  STRE  V1=  5.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  13 **PRTS  DISP  V1=  1.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  14 **PRTS  DISP  V1=  2.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  15 **PRTS  DISP  V1=  3.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  16 **PRTS  DISP  V1=  4.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  17 **PRTS  DISP  V1=  5.000     ,V2=  0.000    
   **END OF MACRO EXECUTION**
 
 
