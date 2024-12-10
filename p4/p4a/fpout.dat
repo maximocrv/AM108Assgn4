@@ -258,3 +258,920 @@
         97            0           -1
         98            0           -1
         99            0            1
+ FEAP : THICK CYLINDER : PLANE STRAIN                                            
+
+     NODAL FORCE/DISPL
+
+      NODE      1 FORCE      2 FORCE
+         1       0.0096       0.0975
+        12       0.0381       0.1913
+        23       0.0747       0.1802
+        34       0.1084       0.1622
+        45       0.1379       0.1379
+        56       0.1622       0.1084
+        67       0.1802       0.0747
+        78       0.1913       0.0381
+        89       0.0975       0.0096
+ FEAP : THICK CYLINDER : PLANE STRAIN                                            
+
+     NODAL PRPID      
+
+      NODE      1 PRPID      2 PRPID
+         1            1            1
+        12            1            1
+        23            1            1
+        34            1            1
+        45            1            1
+        56            1            1
+        67            1            1
+        78            1            1
+        89            1            1
+
+      SET NUMBER  1 HAS TOTAL OF  10 ELEMENTS OR NODES
+
+     1     2     3     4     5     6     7     8     9    10
+
+      SET NUMBER  2 HAS TOTAL OF  10 ELEMENTS OR NODES
+
+    31    32    33    34    35    36    37    38    39    40
+
+      SET NUMBER  3 HAS TOTAL OF  10 ELEMENTS OR NODES
+
+    71    72    73    74    75    76    77    78    79    80
+
+
+     SIZE OF STIFFNESS MATRIX IN PROFILE FORM=      4529
+   MEMORY REQUEST =     12811, CORE = 400000000
+ FEAP : THICK CYLINDER : PLANE STRAIN                                            
+
+     MACRO INSTRUCTIONS
+
+     MACRO STATEMENT     VARIABLE 1     VARIABLE 2
+   MEMORY REQUEST =     12939, CORE = 400000000
+          PRIN           0.0000         0.0000    
+          TANG           0.0000         0.0000    
+          FORM           0.0000         0.0000    
+          SOLV           0.0000         0.0000    
+          CEQS           0.0000         0.0000    
+          DISP           0.0000         0.0000    
+          STRE           0.0000         0.0000    
+          PRTS STRE      1.0000         0.0000    
+          PRTS STRE      2.0000         0.0000    
+          PRTS STRE      3.0000         0.0000    
+          PRTS DISP      1.0000         0.0000    
+          PRTS DISP      2.0000         0.0000    
+          PRTS DISP      3.0000         0.0000    
+          END            0.0000         0.0000    
+  **MACRO INSTRUCTION   1 **PRIN        V1=  0.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   2 **TANG        V1=  0.000     ,V2=  0.000    
+
+
+     PERFORMING UPDATE OF TANGENT STIFFNESS MATRIX
+   MEMORY REQUEST =     21997, CORE = 400000000
+  **MACRO INSTRUCTION   3 **FORM        V1=  0.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   4 **SOLV        V1=  0.000     ,V2=  0.000    
+  **ENERGY COMPUTED IN ACTCOL IS  0.3683451690E-01
+  **MACRO INSTRUCTION   5 **CEQS        V1=  0.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   6 **DISP        V1=  0.000     ,V2=  0.000    
+ FEAP : THICK CYLINDER : PLANE STRAIN                                            
+
+     NODAL DISPLACEMENTS     TIME  0.00000E+00
+  PROP. LD.  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+
+      NODE      1 COORD      2 COORD      1 DISPL      2 DISPL
+         1  0.0000000E+00  0.1000000E+01  0.9600000E-02  0.1436673E-01
+         2  0.0000000E+00  0.1100000E+01  0.0000000E+00  0.1483245E-01
+         3  0.0000000E+00  0.1200000E+01  0.0000000E+00  0.1448774E-01
+         4  0.0000000E+00  0.1300000E+01  0.0000000E+00  0.1417206E-01
+         5  0.0000000E+00  0.1400000E+01  0.0000000E+00  0.1378351E-01
+         6  0.0000000E+00  0.1500000E+01  0.0000000E+00  0.1337270E-01
+         7  0.0000000E+00  0.1600000E+01  0.0000000E+00  0.1297268E-01
+         8  0.0000000E+00  0.1700000E+01  0.0000000E+00  0.1260023E-01
+         9  0.0000000E+00  0.1800000E+01  0.0000000E+00  0.1226386E-01
+        10  0.0000000E+00  0.1900000E+01  0.0000000E+00  0.1196895E-01
+        11  0.0000000E+00  0.2000000E+01  0.0000000E+00  0.1172115E-01
+        12  0.1951000E+00  0.9808000E+00  0.6822271E-02  0.1957564E-01
+        13  0.2146100E+00  0.1078880E+01  0.5787780E-02  0.1836638E-01
+        14  0.2341200E+00  0.1176960E+01  0.4093981E-02  0.1674645E-01
+        15  0.2536300E+00  0.1275040E+01  0.3468081E-02  0.1553364E-01
+        16  0.2731400E+00  0.1373120E+01  0.3143104E-02  0.1463696E-01
+        17  0.2926500E+00  0.1471200E+01  0.2933405E-02  0.1393982E-01
+        18  0.3121600E+00  0.1569280E+01  0.2771520E-02  0.1337863E-01
+        19  0.3316700E+00  0.1667360E+01  0.2625012E-02  0.1291921E-01
+        20  0.3511800E+00  0.1765440E+01  0.2472711E-02  0.1254288E-01
+        21  0.3706900E+00  0.1863520E+01  0.2295433E-02  0.1223998E-01
+        22  0.3902000E+00  0.1961600E+01  0.2070280E-02  0.1200679E-01
+        23  0.3827000E+00  0.9239000E+00  0.9210544E-02  0.1844288E-01
+        24  0.4209700E+00  0.1016290E+01  0.8674807E-02  0.1726796E-01
+        25  0.4592400E+00  0.1108680E+01  0.7982464E-02  0.1638175E-01
+        26  0.4975100E+00  0.1201070E+01  0.7200621E-02  0.1549518E-01
+        27  0.5357800E+00  0.1293460E+01  0.6617522E-02  0.1469961E-01
+        28  0.5740500E+00  0.1385850E+01  0.6177948E-02  0.1402674E-01
+        29  0.6123200E+00  0.1478240E+01  0.5827245E-02  0.1347087E-01
+        30  0.6505900E+00  0.1570630E+01  0.5526280E-02  0.1301862E-01
+        31  0.6888600E+00  0.1663020E+01  0.5246357E-02  0.1265745E-01
+        32  0.7271300E+00  0.1755410E+01  0.4964983E-02  0.1237683E-01
+        33  0.7654000E+00  0.1847800E+01  0.4663994E-02  0.1216721E-01
+        34  0.5556000E+00  0.8315000E+00  0.1217749E-01  0.1693902E-01
+        35  0.6111500E+00  0.9146400E+00  0.1138607E-01  0.1586154E-01
+        36  0.6667000E+00  0.9977800E+00  0.1071000E-01  0.1497232E-01
+        37  0.7222500E+00  0.1080920E+01  0.1011383E-01  0.1425237E-01
+        38  0.7778000E+00  0.1164060E+01  0.9561147E-02  0.1363417E-01
+        39  0.8333500E+00  0.1247200E+01  0.9082425E-02  0.1309891E-01
+        40  0.8889000E+00  0.1330340E+01  0.8672604E-02  0.1264100E-01
+        41  0.9444500E+00  0.1413480E+01  0.8316410E-02  0.1225560E-01
+        42  0.1000000E+01  0.1496620E+01  0.7998278E-02  0.1193656E-01
+        43  0.1055550E+01  0.1579760E+01  0.7705297E-02  0.1167651E-01
+        44  0.1111100E+01  0.1662900E+01  0.7428052E-02  0.1146709E-01
+        45  0.7071000E+00  0.7071000E+00  0.1481833E-01  0.1481833E-01
+        46  0.7778100E+00  0.7778100E+00  0.1387276E-01  0.1387276E-01
+        47  0.8485200E+00  0.8485200E+00  0.1309371E-01  0.1309371E-01
+        48  0.9192300E+00  0.9192300E+00  0.1243524E-01  0.1243524E-01
+        49  0.9899400E+00  0.9899400E+00  0.1188008E-01  0.1188008E-01
+        50  0.1060650E+01  0.1060650E+01  0.1140144E-01  0.1140144E-01
+ FEAP : THICK CYLINDER : PLANE STRAIN                                            
+
+     NODAL DISPLACEMENTS     TIME  0.00000E+00
+  PROP. LD.  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+
+      NODE      1 COORD      2 COORD      1 DISPL      2 DISPL
+        51  0.1131360E+01  0.1131360E+01  0.1098740E-01  0.1098740E-01
+        52  0.1202070E+01  0.1202070E+01  0.1062947E-01  0.1062947E-01
+        53  0.1272780E+01  0.1272780E+01  0.1031967E-01  0.1031967E-01
+        54  0.1343490E+01  0.1343490E+01  0.1005047E-01  0.1005047E-01
+        55  0.1414200E+01  0.1414200E+01  0.9815141E-02  0.9815141E-02
+        56  0.8315000E+00  0.5556000E+00  0.1693902E-01  0.1217749E-01
+        57  0.9146400E+00  0.6111500E+00  0.1586154E-01  0.1138607E-01
+        58  0.9977800E+00  0.6667000E+00  0.1497232E-01  0.1071000E-01
+        59  0.1080920E+01  0.7222500E+00  0.1425237E-01  0.1011383E-01
+        60  0.1164060E+01  0.7778000E+00  0.1363417E-01  0.9561147E-02
+        61  0.1247200E+01  0.8333500E+00  0.1309891E-01  0.9082425E-02
+        62  0.1330340E+01  0.8889000E+00  0.1264100E-01  0.8672604E-02
+        63  0.1413480E+01  0.9444500E+00  0.1225560E-01  0.8316410E-02
+        64  0.1496620E+01  0.1000000E+01  0.1193656E-01  0.7998278E-02
+        65  0.1579760E+01  0.1055550E+01  0.1167651E-01  0.7705297E-02
+        66  0.1662900E+01  0.1111100E+01  0.1146709E-01  0.7428052E-02
+        67  0.9239000E+00  0.3827000E+00  0.1844288E-01  0.9210544E-02
+        68  0.1016290E+01  0.4209700E+00  0.1726796E-01  0.8674807E-02
+        69  0.1108680E+01  0.4592400E+00  0.1638175E-01  0.7982464E-02
+        70  0.1201070E+01  0.4975100E+00  0.1549518E-01  0.7200621E-02
+        71  0.1293460E+01  0.5357800E+00  0.1469961E-01  0.6617522E-02
+        72  0.1385850E+01  0.5740500E+00  0.1402674E-01  0.6177948E-02
+        73  0.1478240E+01  0.6123200E+00  0.1347087E-01  0.5827245E-02
+        74  0.1570630E+01  0.6505900E+00  0.1301862E-01  0.5526280E-02
+        75  0.1663020E+01  0.6888600E+00  0.1265745E-01  0.5246357E-02
+        76  0.1755410E+01  0.7271300E+00  0.1237683E-01  0.4964983E-02
+        77  0.1847800E+01  0.7654000E+00  0.1216721E-01  0.4663994E-02
+        78  0.9808000E+00  0.1951000E+00  0.1957564E-01  0.6822271E-02
+        79  0.1078880E+01  0.2146100E+00  0.1836638E-01  0.5787780E-02
+        80  0.1176960E+01  0.2341200E+00  0.1674645E-01  0.4093981E-02
+        81  0.1275040E+01  0.2536300E+00  0.1553364E-01  0.3468081E-02
+        82  0.1373120E+01  0.2731400E+00  0.1463696E-01  0.3143104E-02
+        83  0.1471200E+01  0.2926500E+00  0.1393982E-01  0.2933405E-02
+        84  0.1569280E+01  0.3121600E+00  0.1337863E-01  0.2771520E-02
+        85  0.1667360E+01  0.3316700E+00  0.1291921E-01  0.2625012E-02
+        86  0.1765440E+01  0.3511800E+00  0.1254288E-01  0.2472711E-02
+        87  0.1863520E+01  0.3706900E+00  0.1223998E-01  0.2295433E-02
+        88  0.1961600E+01  0.3902000E+00  0.1200679E-01  0.2070280E-02
+        89  0.1000000E+01  0.0000000E+00  0.1436673E-01  0.9600000E-02
+        90  0.1100000E+01  0.0000000E+00  0.1483245E-01  0.0000000E+00
+        91  0.1200000E+01  0.0000000E+00  0.1448774E-01  0.0000000E+00
+        92  0.1300000E+01  0.0000000E+00  0.1417206E-01  0.0000000E+00
+        93  0.1400000E+01  0.0000000E+00  0.1378351E-01  0.0000000E+00
+        94  0.1500000E+01  0.0000000E+00  0.1337270E-01  0.0000000E+00
+        95  0.1600000E+01  0.0000000E+00  0.1297268E-01  0.0000000E+00
+        96  0.1700000E+01  0.0000000E+00  0.1260023E-01  0.0000000E+00
+        97  0.1800000E+01  0.0000000E+00  0.1226386E-01  0.0000000E+00
+        98  0.1900000E+01  0.0000000E+00  0.1196895E-01  0.0000000E+00
+        99  0.2000000E+01  0.0000000E+00  0.1172115E-01  0.0000000E+00
+  **MACRO INSTRUCTION   7 **STRE        V1=  0.000     ,V2=  0.000    
+ --- Output Element Variables ---
+ Element Number =            1
+ X Coordinate of the Gauss Point =   0.102427500000000     
+ Y Coordinate of the Gauss Point =    1.03992000000000     
+ Stress at Gauss Point =  -0.216682752802244      -5.949063925409553E-002
+ -0.662785203420052       -1.27387559887281     
+ Strain at Gauss Point =   0.000000000000000E+000  2.043497476125932E-003
+ -5.799331858031498E-003 -3.312076557069307E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            2
+ X Coordinate of the Gauss Point =   0.112182500000000     
+ Y Coordinate of the Gauss Point =    1.13896000000000     
+ Stress at Gauss Point =   0.570824987373478        2.18442264192764     
+ -0.281672684016052       4.619710793686346E-002
+ Strain at Gauss Point =   0.000000000000000E+000  2.097676950920416E-002
+ -1.108246972806388E-002  1.201124806358450E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            3
+ X Coordinate of the Gauss Point =   0.121937500000000     
+ Y Coordinate of the Gauss Point =    1.23800000000000     
+ Stress at Gauss Point =   0.385421313206886        1.54289480477726     
+ -0.258157094087640       7.527516332440987E-002
+ Strain at Gauss Point =   0.000000000000000E+000  1.504715539041485E-002
+ -8.366519294828831E-003  1.957154246434657E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            4
+ X Coordinate of the Gauss Point =   0.131692500000000     
+ Y Coordinate of the Gauss Point =    1.33704000000000     
+ Stress at Gauss Point =   0.313483803985021        1.25733226839595     
+ -0.212386255112542       2.626837154265144E-002
+ Strain at Gauss Point =   0.000000000000000E+000  1.227003003734202E-002
+ -6.836310768268322E-003  6.829776601089375E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            5
+ X Coordinate of the Gauss Point =   0.141447500000000     
+ Y Coordinate of the Gauss Point =    1.43608000000000     
+ Stress at Gauss Point =   0.273976233893506        1.08425167681716     
+ -0.170997563838813      -5.948758162524492E-003
+ Strain at Gauss Point =   0.000000000000000E+000  1.053358075800757E-002
+ -5.784659370520140E-003 -1.546677122256368E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            6
+ X Coordinate of the Gauss Point =   0.151202500000000     
+ Y Coordinate of the Gauss Point =    1.53512000000000     
+ Stress at Gauss Point =   0.248041775764760       0.960532587528281     
+ -0.133726668312415      -2.342667831194127E-002
+ Strain at Gauss Point =   0.000000000000000E+000  9.262380552925775E-003
+ -4.962989773003273E-003 -6.090936361104731E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            7
+ X Coordinate of the Gauss Point =   0.160957500000000     
+ Y Coordinate of the Gauss Point =    1.63416000000000     
+ Stress at Gauss Point =   0.228470640067348       0.861498688045871     
+ -9.992988782137696E-002 -3.247573517397040E-002
+ Strain at Gauss Point =   0.000000000000000E+000  8.229364623720800E-003
+ -4.269206862553429E-003 -8.443691145232305E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            8
+ X Coordinate of the Gauss Point =   0.170712500000000     
+ Y Coordinate of the Gauss Point =    1.73320000000000     
+ Stress at Gauss Point =   0.211721503097632       0.774702614577755     
+ -6.896427091898100E-002 -3.742710609517672E-002
+ Strain at Gauss Point =   0.000000000000000E+000  7.318754449241596E-003
+ -3.648915062215971E-003 -9.731047584745946E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =            9
+ X Coordinate of the Gauss Point =   0.180467500000000     
+ Y Coordinate of the Gauss Point =    1.83224000000000     
+ Stress at Gauss Point =   0.195648455316852       0.692158093119028     
+ -3.999657539618806E-002 -4.116235286104938E-002
+ Strain at Gauss Point =   0.000000000000000E+000  6.454625291428292E-003
+ -3.063385399269522E-003 -1.070221174387284E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           10
+ X Coordinate of the Gauss Point =   0.190222500000000     
+ Y Coordinate of the Gauss Point =    1.93128000000000     
+ Stress at Gauss Point =   0.178582810271094       0.607180607011042     
+ -1.190457277406382E-002 -4.606016161292865E-002
+ Strain at Gauss Point =   0.000000000000000E+000  5.571771357619335E-003
+ -2.476335979587047E-003 -1.197564201936145E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           11
+ X Coordinate of the Gauss Point =   0.303345000000000     
+ Y Coordinate of the Gauss Point =   0.999967500000000     
+ Stress at Gauss Point =   4.790538095054808E-003  0.771902299201002     
+ -0.755933838884153      -0.766619485690398     
+ Strain at Gauss Point =   0.000000000000000E+000  9.972452894377313E-003
+ -9.889416900729697E-003 -1.993210662795035E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           12
+ X Coordinate of the Gauss Point =   0.332235000000000     
+ Y Coordinate of the Gauss Point =    1.09520250000000     
+ Stress at Gauss Point =  -1.192722112990707E-002  0.826559405680707     
+ -0.866316809447064      -0.869002250112059     
+ Strain at Gauss Point =   0.000000000000000E+000  1.090032614853799E-002
+ -1.110706464812304E-002 -2.259405850291353E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           13
+ X Coordinate of the Gauss Point =   0.361125000000000     
+ Y Coordinate of the Gauss Point =    1.19043750000000     
+ Stress at Gauss Point =   0.171515853465433        1.15825193902793     
+ -0.586532427476484      -0.581952157803461     
+ Strain at Gauss Point =   0.000000000000000E+000  1.282756911231242E-002
+ -9.854627652244916E-003 -1.513075610288998E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           14
+ X Coordinate of the Gauss Point =   0.390015000000000     
+ Y Coordinate of the Gauss Point =    1.28567250000000     
+ Stress at Gauss Point =   0.205157810616531        1.10557004978066     
+ -0.421710681058891      -0.413168253881920     
+ Strain at Gauss Point =   0.000000000000000E+000  1.170535910913370E-002
+ -8.149290391780487E-003 -1.074237460092992E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           15
+ X Coordinate of the Gauss Point =   0.418905000000000     
+ Y Coordinate of the Gauss Point =    1.38090750000000     
+ Stress at Gauss Point =   0.213442877222283        1.01057758188773     
+ -0.299101324480123      -0.319169519709645     
+ Strain at Gauss Point =   0.000000000000000E+000  1.036275116065085E-002
+ -6.663074622131282E-003 -8.298407512450763E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           16
+ X Coordinate of the Gauss Point =   0.447795000000000     
+ Y Coordinate of the Gauss Point =    1.47614250000000     
+ Stress at Gauss Point =   0.214437791296732       0.920063683574723     
+ -0.205271045918949      -0.262335650248074     
+ Strain at Gauss Point =   0.000000000000000E+000  9.173136599613878E-003
+ -5.456214883803850E-003 -6.820726906449913E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           17
+ X Coordinate of the Gauss Point =   0.476685000000000     
+ Y Coordinate of the Gauss Point =    1.57137750000000     
+ Stress at Gauss Point =   0.212881059877148       0.840501652312230     
+ -0.130898119388402      -0.225782160251092     
+ Strain at Gauss Point =   0.000000000000000E+000  8.159067701656059E-003
+ -4.469129330452154E-003 -5.870336166528386E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           18
+ X Coordinate of the Gauss Point =   0.505575000000000     
+ Y Coordinate of the Gauss Point =    1.66661250000000     
+ Stress at Gauss Point =   0.210466613471829       0.770803123122484     
+ -6.924774488305341E-002 -0.202154520134529     
+ Strain at Gauss Point =   0.000000000000000E+000  7.284374625458508E-003
+ -3.636286658613472E-003 -5.256017523497764E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           19
+ X Coordinate of the Gauss Point =   0.534465000000000     
+ Y Coordinate of the Gauss Point =    1.76184750000000     
+ Stress at Gauss Point =   0.208051484041058       0.708998963411690     
+ -1.549401660816446E-002 -0.188568025833098     
+ Strain at Gauss Point =   0.000000000000000E+000  6.512317231818218E-003
+ -2.906091508439887E-003 -4.902768671660551E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           20
+ X Coordinate of the Gauss Point =   0.563355000000000     
+ Y Coordinate of the Gauss Point =    1.85708250000000     
+ Stress at Gauss Point =   0.206459937142204       0.654185157515314     
+  3.401463295869817E-002 -0.184678030223415     
+ Strain at Gauss Point =   0.000000000000000E+000  5.820427864850436E-003
+ -2.241788954385572E-003 -4.801628785808783E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           21
+ X Coordinate of the Gauss Point =   0.492605000000000     
+ Y Coordinate of the Gauss Point =   0.921582500000000     
+ Stress at Gauss Point =   0.136880451303030       0.830809969943175     
+ -0.374541798933076      -0.921210231289231     
+ Strain at Gauss Point =   0.000000000000000E+000  9.021083742321891E-003
+ -6.648489253069378E-003 -2.395146601352000E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           22
+ X Coordinate of the Gauss Point =   0.539515000000000     
+ Y Coordinate of the Gauss Point =    1.00934750000000     
+ Stress at Gauss Point =   0.142731649903582       0.711744249036748     
+ -0.235972082691473      -0.825486474060327     
+ Strain at Gauss Point =   0.000000000000000E+000  7.397163788731150E-003
+ -4.923148523735724E-003 -2.146264832556851E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           23
+ X Coordinate of the Gauss Point =   0.586425000000000     
+ Y Coordinate of the Gauss Point =    1.09711250000000     
+ Stress at Gauss Point =   0.133807019717197       0.663549398746386     
+ -0.217525999689062      -0.773449589415467     
+ Strain at Gauss Point =   0.000000000000000E+000  6.886650927379457E-003
+ -4.567329252281371E-003 -2.010968932480214E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           24
+ X Coordinate of the Gauss Point =   0.633335000000000     
+ Y Coordinate of the Gauss Point =    1.18487750000000     
+ Stress at Gauss Point =   0.164999104561386       0.708727746897319     
+ -0.158730731692699      -0.670922567109776     
+ Strain at Gauss Point =   0.000000000000000E+000  7.068472350367134E-003
+ -4.208487871303110E-003 -1.744398674485418E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           25
+ X Coordinate of the Gauss Point =   0.680245000000000     
+ Y Coordinate of the Gauss Point =    1.27264250000000     
+ Stress at Gauss Point =   0.184440078587669       0.714982586894836     
+ -0.100182324935939      -0.572017649383342     
+ Strain at Gauss Point =   0.000000000000000E+000  6.897052607993169E-003
+ -3.700091245806905E-003 -1.487245888396690E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           26
+ X Coordinate of the Gauss Point =   0.727155000000000     
+ Y Coordinate of the Gauss Point =    1.36040750000000     
+ Stress at Gauss Point =   0.196994915564371       0.700292116822584     
+ -4.364239827467919E-002 -0.491640974330751     
+ Strain at Gauss Point =   0.000000000000000E+000  6.542863616356764E-003
+ -3.128285079907658E-003 -1.278266533259952E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           27
+ X Coordinate of the Gauss Point =   0.774065000000000     
+ Y Coordinate of the Gauss Point =    1.44817250000000     
+ Stress at Gauss Point =   0.206280976005591       0.677519902900729     
+  1.008335045124059E-002 -0.429791293933306     
+ Strain at Gauss Point =   0.000000000000000E+000  6.126106049636795E-003
+ -2.550569132206554E-003 -1.117457364226594E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           28
+ X Coordinate of the Gauss Point =   0.820975000000000     
+ Y Coordinate of the Gauss Point =    1.53593750000000     
+ Stress at Gauss Point =   0.214199242738497       0.653198211025620     
+  6.079926476937114E-002 -0.383720722762555     
+ Strain at Gauss Point =   0.000000000000000E+000  5.706986587732594E-003
+ -1.994199713598641E-003 -9.976738791826419E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           29
+ X Coordinate of the Gauss Point =   0.867885000000000     
+ Y Coordinate of the Gauss Point =    1.62370250000000     
+ Stress at Gauss Point =   0.221868882118264       0.630905342883548     
+  0.108657597510666      -0.350906747815330     
+ Strain at Gauss Point =   0.000000000000000E+000  5.317473989948689E-003
+ -1.471746699898774E-003 -9.123575443198592E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           30
+ X Coordinate of the Gauss Point =   0.914795000000000     
+ Y Coordinate of the Gauss Point =    1.71146750000000     
+ Stress at Gauss Point =   0.230006228006853       0.613066905993885     
+  0.153620520695626      -0.329401651435919     
+ Strain at Gauss Point =   0.000000000000000E+000  4.979788813831415E-003
+ -9.930141950459589E-004 -8.564442937333900E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           31
+ X Coordinate of the Gauss Point =   0.662915000000000     
+ Y Coordinate of the Gauss Point =   0.807762500000000     
+ Stress at Gauss Point =   0.148099064197780       0.462728619588926     
+  3.093492773700851E-002  -1.10822216855678     
+ Strain at Gauss Point =   0.000000000000000E+000  4.090184220084895E-003
+ -1.523133773990035E-003 -2.881377638247617E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           32
+ X Coordinate of the Gauss Point =   0.726045000000000     
+ Y Coordinate of the Gauss Point =   0.884687500000000     
+ Stress at Gauss Point =   0.154268649282191       0.439735754645240     
+  7.449307629539484E-002 -0.940497037251107     
+ Strain at Gauss Point =   0.000000000000000E+000  3.711072369719647E-003
+ -1.037082448828344E-003 -2.445292296852878E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           33
+ X Coordinate of the Gauss Point =   0.789175000000000     
+ Y Coordinate of the Gauss Point =   0.961612500000000     
+ Stress at Gauss Point =   0.164566688159099       0.427776469125606     
+  0.120779158071391      -0.814876561816325     
+ Strain at Gauss Point =   0.000000000000000E+000  3.421727152564589E-003
+ -5.692378911402035E-004 -2.118679060722444E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           34
+ X Coordinate of the Gauss Point =   0.852305000000000     
+ Y Coordinate of the Gauss Point =    1.03853750000000     
+ Stress at Gauss Point =   0.171281355834956       0.420936627608228     
+  0.150001225174959      -0.723861376191356     
+ Strain at Gauss Point =   0.000000000000000E+000  3.245518533052535E-003
+ -2.766416985799658E-004 -1.882039578097526E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           35
+ X Coordinate of the Gauss Point =   0.915435000000000     
+ Y Coordinate of the Gauss Point =    1.11546250000000     
+ Stress at Gauss Point =   0.182796078108069       0.433156882508911     
+  0.176163377851318      -0.646882746448882     
+ Strain at Gauss Point =   0.000000000000000E+000  3.254690457210954E-003
+ -8.622510333776423E-005 -1.681895140767094E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           36
+ X Coordinate of the Gauss Point =   0.978565000000000     
+ Y Coordinate of the Gauss Point =    1.19238750000000     
+ Stress at Gauss Point =   0.194992449808543       0.446394119230135     
+  0.203580713465008      -0.579962325080453     
+ Strain at Gauss Point =   0.000000000000000E+000  3.268221702480700E-003
+  1.116474275340423E-004 -1.507902045209177E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           37
+ X Coordinate of the Gauss Point =    1.04169500000000     
+ Y Coordinate of the Gauss Point =    1.26931250000000     
+ Stress at Gauss Point =   0.206698102510653       0.456982503918166     
+  0.232011171117343      -0.523088489220820     
+ Strain at Gauss Point =   0.000000000000000E+000  3.253697218297671E-003
+  3.290698918869753E-004 -1.360030071974131E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           38
+ X Coordinate of the Gauss Point =    1.10482500000000     
+ Y Coordinate of the Gauss Point =    1.34623750000000     
+ Stress at Gauss Point =   0.217842928318902       0.465529648932247     
+  0.260613445464091      -0.476229446404133     
+ Strain at Gauss Point =   0.000000000000000E+000  3.219927367973496E-003
+  5.560167228874646E-004 -1.238196560650746E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           39
+ X Coordinate of the Gauss Point =    1.16795500000000     
+ Y Coordinate of the Gauss Point =    1.42316250000000     
+ Stress at Gauss Point =   0.228585960852035       0.473318830960223     
+  0.288634371879894      -0.438769424461829     
+ Strain at Gauss Point =   0.000000000000000E+000  3.181527311406439E-003
+  7.806293433621700E-004 -1.140800503600756E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           40
+ X Coordinate of the Gauss Point =    1.23108500000000     
+ Y Coordinate of the Gauss Point =    1.50008750000000     
+ Stress at Gauss Point =   0.239048250481006       0.481436998490352     
+  0.315390503113001      -0.409592217690292     
+ Strain at Gauss Point =   0.000000000000000E+000  3.151053724121503E-003
+  9.924492842159349E-004 -1.064939765994760E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           41
+ X Coordinate of the Gauss Point =   0.807762500000000     
+ Y Coordinate of the Gauss Point =   0.662915000000000     
+ Stress at Gauss Point =   0.148099064197787       3.093492773700512E-002
+  0.462728619588950       -1.10822216855679     
+ Strain at Gauss Point =   0.000000000000000E+000 -1.523133773990160E-003
+  4.090184220085127E-003 -2.881377638247642E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           42
+ X Coordinate of the Gauss Point =   0.884687500000000     
+ Y Coordinate of the Gauss Point =   0.726045000000000     
+ Stress at Gauss Point =   0.154268649282196       7.449307629537921E-002
+  0.439735754645273      -0.940497037251110     
+ Strain at Gauss Point =   0.000000000000000E+000 -1.037082448828615E-003
+  3.711072369720007E-003 -2.445292296852886E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           43
+ X Coordinate of the Gauss Point =   0.961612500000000     
+ Y Coordinate of the Gauss Point =   0.789175000000000     
+ Stress at Gauss Point =   0.164566688159102       0.120779158071372     
+  0.427776469125635      -0.814876561816323     
+ Strain at Gauss Point =   0.000000000000000E+000 -5.692378911404880E-004
+  3.421727152564925E-003 -2.118679060722440E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           44
+ X Coordinate of the Gauss Point =    1.03853750000000     
+ Y Coordinate of the Gauss Point =   0.852305000000000     
+ Stress at Gauss Point =   0.171281355834956       0.150001225174926     
+  0.420936627608262      -0.723861376191351     
+ Strain at Gauss Point =   0.000000000000000E+000 -2.766416985803960E-004
+  3.245518533052973E-003 -1.882039578097512E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           45
+ X Coordinate of the Gauss Point =    1.11546250000000     
+ Y Coordinate of the Gauss Point =   0.915435000000000     
+ Stress at Gauss Point =   0.182796078108068       0.176163377851289     
+  0.433156882508939      -0.646882746448881     
+ Strain at Gauss Point =   0.000000000000000E+000 -8.622510333813199E-005
+  3.254690457211315E-003 -1.681895140767091E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           46
+ X Coordinate of the Gauss Point =    1.19238750000000     
+ Y Coordinate of the Gauss Point =   0.978565000000000     
+ Stress at Gauss Point =   0.194992449808542       0.203580713464984     
+  0.446394119230157      -0.579962325080447     
+ Strain at Gauss Point =   0.000000000000000E+000  1.116474275337405E-004
+  3.268221702480992E-003 -1.507902045209163E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           47
+ X Coordinate of the Gauss Point =    1.26931250000000     
+ Y Coordinate of the Gauss Point =    1.04169500000000     
+ Stress at Gauss Point =   0.206698102510650       0.232011171117321     
+  0.456982503918178      -0.523088489220814     
+ Strain at Gauss Point =   0.000000000000000E+000  3.290698918867289E-004
+  3.253697218297866E-003 -1.360030071974117E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           48
+ X Coordinate of the Gauss Point =    1.34623750000000     
+ Y Coordinate of the Gauss Point =    1.10482500000000     
+ Stress at Gauss Point =   0.217842928318903       0.260613445464083     
+  0.465529648932261      -0.476229446404131     
+ Strain at Gauss Point =   0.000000000000000E+000  5.560167228873328E-004
+  3.219927367973656E-003 -1.238196560650740E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           49
+ X Coordinate of the Gauss Point =    1.42316250000000     
+ Y Coordinate of the Gauss Point =    1.16795500000000     
+ Stress at Gauss Point =   0.228585960852040       0.288634371879895     
+  0.473318830960237      -0.438769424461826     
+ Strain at Gauss Point =   0.000000000000000E+000  7.806293433621214E-004
+  3.181527311406564E-003 -1.140800503600748E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           50
+ X Coordinate of the Gauss Point =    1.50008750000000     
+ Y Coordinate of the Gauss Point =    1.23108500000000     
+ Stress at Gauss Point =   0.239048250481008       0.315390503113006     
+  0.481436998490354      -0.409592217690290     
+ Strain at Gauss Point =   0.000000000000000E+000  9.924492842159696E-004
+  3.151053724121500E-003 -1.064939765994754E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           51
+ X Coordinate of the Gauss Point =   0.921582500000000     
+ Y Coordinate of the Gauss Point =   0.492605000000000     
+ Stress at Gauss Point =   0.136880451303050      -0.374541798933068     
+  0.830809969943233      -0.921210231289251     
+ Strain at Gauss Point =   0.000000000000000E+000 -6.648489253069531E-003
+  9.021083742322390E-003 -2.395146601352052E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           52
+ X Coordinate of the Gauss Point =    1.00934750000000     
+ Y Coordinate of the Gauss Point =   0.539515000000000     
+ Stress at Gauss Point =   0.142731649903597      -0.235972082691475     
+  0.711744249036800      -0.825486474060334     
+ Strain at Gauss Point =   0.000000000000000E+000 -4.923148523735946E-003
+  7.397163788731634E-003 -2.146264832556870E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           53
+ X Coordinate of the Gauss Point =    1.09711250000000     
+ Y Coordinate of the Gauss Point =   0.586425000000000     
+ Stress at Gauss Point =   0.133807019717207      -0.217525999689072     
+  0.663549398746430      -0.773449589415465     
+ Strain at Gauss Point =   0.000000000000000E+000 -4.567329252281628E-003
+  6.886650927379889E-003 -2.010968932480209E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           54
+ X Coordinate of the Gauss Point =    1.18487750000000     
+ Y Coordinate of the Gauss Point =   0.633335000000000     
+ Stress at Gauss Point =   0.164999104561394      -0.158730731692713     
+  0.708727746897359      -0.670922567109770     
+ Strain at Gauss Point =   0.000000000000000E+000 -4.208487871303387E-003
+  7.068472350367547E-003 -1.744398674485402E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           55
+ X Coordinate of the Gauss Point =    1.27264250000000     
+ Y Coordinate of the Gauss Point =   0.680245000000000     
+ Stress at Gauss Point =   0.184440078587674      -0.100182324935954     
+  0.714982586894867      -0.572017649383337     
+ Strain at Gauss Point =   0.000000000000000E+000 -3.700091245807162E-003
+  6.897052607993510E-003 -1.487245888396677E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           56
+ X Coordinate of the Gauss Point =    1.36040750000000     
+ Y Coordinate of the Gauss Point =   0.727155000000000     
+ Stress at Gauss Point =   0.196994915564370      -4.364239827470545E-002
+  0.700292116822606      -0.491640974330742     
+ Strain at Gauss Point =   0.000000000000000E+000 -3.128285079907984E-003
+  6.542863616357069E-003 -1.278266533259930E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           57
+ X Coordinate of the Gauss Point =    1.44817250000000     
+ Y Coordinate of the Gauss Point =   0.774065000000000     
+ Stress at Gauss Point =   0.206280976005589       1.008335045122283E-002
+  0.677519902900739      -0.429791293933296     
+ Strain at Gauss Point =   0.000000000000000E+000 -2.550569132206755E-003
+  6.126106049636957E-003 -1.117457364226569E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           58
+ X Coordinate of the Gauss Point =    1.53593750000000     
+ Y Coordinate of the Gauss Point =   0.820975000000000     
+ Stress at Gauss Point =   0.214199242738491       6.079926476935599E-002
+  0.653198211025615      -0.383720722762542     
+ Strain at Gauss Point =   0.000000000000000E+000 -1.994199713598759E-003
+  5.706986587732606E-003 -9.976738791826100E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           59
+ X Coordinate of the Gauss Point =    1.62370250000000     
+ Y Coordinate of the Gauss Point =   0.867885000000000     
+ Stress at Gauss Point =   0.221868882118258       0.108657597510656     
+  0.630905342883536      -0.350906747815315     
+ Strain at Gauss Point =   0.000000000000000E+000 -1.471746699898822E-003
+  5.317473989948619E-003 -9.123575443198202E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           60
+ X Coordinate of the Gauss Point =    1.71146750000000     
+ Y Coordinate of the Gauss Point =   0.914795000000000     
+ Stress at Gauss Point =   0.230006228006843       0.153620520695615     
+  0.613066905993860      -0.329401651435903     
+ Strain at Gauss Point =   0.000000000000000E+000 -9.930141950459589E-004
+  4.979788813831230E-003 -8.564442937333477E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           61
+ X Coordinate of the Gauss Point =   0.999967500000000     
+ Y Coordinate of the Gauss Point =   0.303345000000000     
+ Stress at Gauss Point =   4.790538095081454E-003 -0.755933838884148     
+  0.771902299201087      -0.766619485690413     
+ Strain at Gauss Point =   0.000000000000000E+000 -9.889416900729989E-003
+  9.972452894378068E-003 -1.993210662795075E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           62
+ X Coordinate of the Gauss Point =    1.09520250000000     
+ Y Coordinate of the Gauss Point =   0.332235000000000     
+ Stress at Gauss Point =  -1.192722112988742E-002 -0.866316809447063     
+  0.826559405680771      -0.869002250112063     
+ Strain at Gauss Point =   0.000000000000000E+000 -1.110706464812328E-002
+  1.090032614853856E-002 -2.259405850291365E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           63
+ X Coordinate of the Gauss Point =    1.19043750000000     
+ Y Coordinate of the Gauss Point =   0.361125000000000     
+ Stress at Gauss Point =   0.171515853465447      -0.586532427476487     
+   1.15825193902798      -0.581952157803460     
+ Strain at Gauss Point =   0.000000000000000E+000 -9.854627652245138E-003
+  1.282756911231288E-002 -1.513075610288995E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           64
+ X Coordinate of the Gauss Point =    1.28567250000000     
+ Y Coordinate of the Gauss Point =   0.390015000000000     
+ Stress at Gauss Point =   0.205157810616541      -0.421710681058891     
+   1.10557004978070      -0.413168253881916     
+ Strain at Gauss Point =   0.000000000000000E+000 -8.149290391780625E-003
+  1.170535910913401E-002 -1.074237460092980E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           65
+ X Coordinate of the Gauss Point =    1.38090750000000     
+ Y Coordinate of the Gauss Point =   0.418905000000000     
+ Stress at Gauss Point =   0.213442877222294      -0.299101324480112     
+   1.01057758188776      -0.319169519709639     
+ Strain at Gauss Point =   0.000000000000000E+000 -6.663074622131282E-003
+  1.036275116065105E-002 -8.298407512450603E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           66
+ X Coordinate of the Gauss Point =    1.47614250000000     
+ Y Coordinate of the Gauss Point =   0.447795000000000     
+ Stress at Gauss Point =   0.214437791296732      -0.205271045918957     
+  0.920063683574732      -0.262335650248067     
+ Strain at Gauss Point =   0.000000000000000E+000 -5.456214883803961E-003
+  9.173136599613991E-003 -6.820726906449741E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           67
+ X Coordinate of the Gauss Point =    1.57137750000000     
+ Y Coordinate of the Gauss Point =   0.476685000000000     
+ Stress at Gauss Point =   0.212881059877151      -0.130898119388400     
+  0.840501652312235      -0.225782160251086     
+ Strain at Gauss Point =   0.000000000000000E+000 -4.469129330452154E-003
+  8.159067701656097E-003 -5.870336166528239E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           68
+ X Coordinate of the Gauss Point =    1.66661250000000     
+ Y Coordinate of the Gauss Point =   0.505575000000000     
+ Stress at Gauss Point =   0.210466613471826      -6.924774488305441E-002
+  0.770803123122476      -0.202154520134524     
+ Strain at Gauss Point =   0.000000000000000E+000 -3.636286658613451E-003
+  7.284374625458443E-003 -5.256017523497636E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           69
+ X Coordinate of the Gauss Point =    1.76184750000000     
+ Y Coordinate of the Gauss Point =   0.534465000000000     
+ Stress at Gauss Point =   0.208051484041050      -1.549401660816907E-002
+  0.708998963411668      -0.188568025833092     
+ Strain at Gauss Point =   0.000000000000000E+000 -2.906091508439845E-003
+  6.512317231818041E-003 -4.902768671660382E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           70
+ X Coordinate of the Gauss Point =    1.85708250000000     
+ Y Coordinate of the Gauss Point =   0.563355000000000     
+ Stress at Gauss Point =   0.206459937142195       3.401463295869867E-002
+  0.654185157515283      -0.184678030223405     
+ Strain at Gauss Point =   0.000000000000000E+000 -2.241788954385447E-003
+  5.820427864850154E-003 -4.801628785808528E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           71
+ X Coordinate of the Gauss Point =    1.03992000000000     
+ Y Coordinate of the Gauss Point =   0.102427500000000     
+ Stress at Gauss Point =  -0.216682752802211      -0.662785203420042     
+ -5.949063925399389E-002  -1.27387559887282     
+ Strain at Gauss Point =   0.000000000000000E+000 -5.799331858031803E-003
+  2.043497476126819E-003 -3.312076557069328E-002
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           72
+ X Coordinate of the Gauss Point =    1.13896000000000     
+ Y Coordinate of the Gauss Point =   0.112182500000000     
+ Stress at Gauss Point =   0.570824987373504      -0.281672684016039     
+   2.18442264192772       4.619710793685973E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -1.108246972806405E-002
+  2.097676950920478E-002  1.201124806358353E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           73
+ X Coordinate of the Gauss Point =    1.23800000000000     
+ Y Coordinate of the Gauss Point =   0.121937500000000     
+ Stress at Gauss Point =   0.385421313206903      -0.258157094087631     
+   1.54289480477731       7.527516332440973E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -8.366519294828942E-003
+  1.504715539041527E-002  1.957154246434653E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           74
+ X Coordinate of the Gauss Point =    1.33704000000000     
+ Y Coordinate of the Gauss Point =   0.131692500000000     
+ Stress at Gauss Point =   0.313483803985032      -0.212386255112536     
+   1.25733226839598       2.626837154265271E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -6.836310768268392E-003
+  1.227003003734228E-002  6.829776601089705E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           75
+ X Coordinate of the Gauss Point =    1.43608000000000     
+ Y Coordinate of the Gauss Point =   0.141447500000000     
+ Stress at Gauss Point =   0.273976233893514      -0.170997563838803     
+   1.08425167681718      -5.948758162521156E-003
+ Strain at Gauss Point =   0.000000000000000E+000 -5.784659370520126E-003
+  1.053358075800771E-002 -1.546677122255501E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           76
+ X Coordinate of the Gauss Point =    1.53512000000000     
+ Y Coordinate of the Gauss Point =   0.151202500000000     
+ Stress at Gauss Point =   0.248041775764764      -0.133726668312408     
+  0.960532587528288      -2.342667831193600E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -4.962989773003232E-003
+  9.262380552925808E-003 -6.090936361103361E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           77
+ X Coordinate of the Gauss Point =    1.63416000000000     
+ Y Coordinate of the Gauss Point =   0.160957500000000     
+ Stress at Gauss Point =   0.228470640067350      -9.992988782136747E-002
+  0.861498688045869      -3.247573517396540E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -4.269206862553332E-003
+  8.229364623720738E-003 -8.443691145231004E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           78
+ X Coordinate of the Gauss Point =    1.73320000000000     
+ Y Coordinate of the Gauss Point =   0.170712500000000     
+ Stress at Gauss Point =   0.211721503097629      -6.896427091897805E-002
+  0.774702614577740      -3.742710609517098E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -3.648915062215888E-003
+  7.318754449241452E-003 -9.731047584744454E-004
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           79
+ X Coordinate of the Gauss Point =    1.83224000000000     
+ Y Coordinate of the Gauss Point =   0.180467500000000     
+ Stress at Gauss Point =   0.195648455316842      -3.999657539619339E-002
+  0.692158093119002      -4.116235286104591E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -3.063385399269467E-003
+  6.454625291428069E-003 -1.070221174387194E-003
+ --------------------------------
+ --- Output Element Variables ---
+ Element Number =           80
+ X Coordinate of the Gauss Point =    1.93128000000000     
+ Y Coordinate of the Gauss Point =   0.190222500000000     
+ Stress at Gauss Point =   0.178582810271082      -1.190457277406859E-002
+  0.607180607011008      -4.606016161292457E-002
+ Strain at Gauss Point =   0.000000000000000E+000 -2.476335979586956E-003
+  5.571771357619043E-003 -1.197564201936039E-003
+ --------------------------------
+  **MACRO INSTRUCTION   8 **PRTS  STRE  V1=  1.000     ,V2=  0.000    
+  **MACRO INSTRUCTION   9 **PRTS  STRE  V1=  2.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  10 **PRTS  STRE  V1=  3.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  11 **PRTS  DISP  V1=  1.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  12 **PRTS  DISP  V1=  2.000     ,V2=  0.000    
+  **MACRO INSTRUCTION  13 **PRTS  DISP  V1=  3.000     ,V2=  0.000    
+  **END OF MACRO EXECUTION**
+
+
+     *** ANALYSIS HAS BEEN COMPLETED
