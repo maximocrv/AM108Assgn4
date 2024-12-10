@@ -19,7 +19,7 @@ if __name__=="__main__":
             sigma_dict[ele]['sigma_xx'] = sigma_xx
             sigma_dict[ele]['sigma_yy'] = sigma_yy
 
-            if ele in np.arange(1, 12):
+            if ele in np.arange(1, 11):
                 theta = np.pi / 2 / 8 / 2
             elif ele in np.arange(31, 41):
                 theta = 3 * np.pi / 2 / 8 + np.pi / 2 / 8 / 2
@@ -30,8 +30,5 @@ if __name__=="__main__":
             sigma_dict[ele]['sigma_tt'] = sigma_yy * np.sin(theta) - sigma_xx * np.cos(theta)
 
     for ele, sigmas in sigma_dict.items():
-        print(f"Element: {ele}")
-        print(f"sigma_tt = {sigmas['sigma_tt']}")
-        print(f"sigma_rr = {sigmas['sigma_rr']}")
-        print("\n")
+        print(f"Element: {ele} -> sigma_tt = {sigmas['sigma_tt']:.4f} || sigma_rr = {sigmas['sigma_rr']:.4f}")
     embed()
