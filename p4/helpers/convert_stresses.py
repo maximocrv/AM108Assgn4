@@ -3,7 +3,7 @@ from IPython import embed
 
 
 if __name__=="__main__":
-    with open("fpprts.dat", "r") as f:
+    with open("../p4a/fpprts.dat", "r") as f:
         lines = f.readlines()
 
     sigma_dict = {}
@@ -23,7 +23,6 @@ if __name__=="__main__":
             if ele in np.arange(1, 11):
                 theta = np.pi / 2 - np.pi / 2 / 8 / 2
             elif ele in np.arange(21, 31):
-                # theta = 2 * np.pi / 2 / 8 + np.pi / 2 / 8 / 2
                 theta = 5 * np.pi / 2 / 8 + np.pi / 2 / 8 / 2
             elif ele in np.arange(31, 41):
                 theta = 4 * np.pi / 2 / 8 + np.pi / 2 / 8 / 2
