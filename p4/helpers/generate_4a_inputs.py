@@ -150,26 +150,28 @@ if __name__ == "__main__":
 
         # consistent nodal loads
         if node  == 1:
-            # f1 = dtheta * np.sin(thetas[i]) / 2
-            # f2 = dtheta * np.cos(thetas[i]) / 2
+            f1 = dtheta * np.sin(thetas[i]) / 2
+            f2 = dtheta * np.cos(thetas[i]) / 2
 
             # using straight line segments
-            f = 2 * np.sin(dtheta / 2) / 2
-            f1 = f * np.sin(thetas[i] + dtheta / 2)
-            f2 = f * np.cos(thetas[i] + dtheta / 2)
+            # f = 2 * np.sin(dtheta / 2) / 2
+            # f1 = f * np.sin(thetas[i] + dtheta / 2)
+            # f2 = f * np.cos(thetas[i] + dtheta / 2)
         elif node == 89:
+            f1 = dtheta * np.sin(thetas[i]) / 2
+            f2 = dtheta * np.cos(thetas[i]) / 2
             # using straight line segments
-            f = 2 * np.sin(dtheta / 2) / 2
-            f1 = f * np.sin(thetas[i] - dtheta / 2)
-            f2 = f * np.cos(thetas[i] - dtheta / 2)
+            # f = 2 * np.sin(dtheta / 2) / 2
+            # f1 = f * np.sin(thetas[i] - dtheta / 2)
+            # f2 = f * np.cos(thetas[i] - dtheta / 2)
         else:
-            # f1 = dtheta * np.sin(thetas[i])
-            # f2 = dtheta * np.cos(thetas[i])
+            f1 = dtheta * np.sin(thetas[i])
+            f2 = dtheta * np.cos(thetas[i])
 
             # using straight line segments
-            f = 2 * np.sin(dtheta / 2) / 2
-            f1 = f * np.sin(thetas[i] - dtheta / 2) + f * np.sin(thetas[i] + dtheta / 2)
-            f2 = f * np.cos(thetas[i] - dtheta / 2) + f * np.cos(thetas[i] + dtheta / 2)
+            # f = 2 * np.sin(dtheta / 2) / 2
+            # f1 = f * np.sin(thetas[i] - dtheta / 2) + f * np.sin(thetas[i] + dtheta / 2)
+            # f2 = f * np.cos(thetas[i] - dtheta / 2) + f * np.cos(thetas[i] + dtheta / 2)
 
         f1_str = f"{f1:.4f}"
         f2_str = f"{f2:.4f}"

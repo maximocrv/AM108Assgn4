@@ -48,4 +48,6 @@ if __name__=="__main__":
 
     for ele, sigmas in sigma_dict.items():
         print(f"Element: {ele} -> sigma_tt = {sigmas['sigma_tt']:.4f} || sigma_rr = {sigmas['sigma_rr']:.4f}")
+        if ele in [10, 30, 40, 50, 80]:
+            print("\n")
     embed()
