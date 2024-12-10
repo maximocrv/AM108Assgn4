@@ -83,9 +83,10 @@ if __name__=="__main__":
     f_sigma_tt = lambda r: 1 / 3 * (1 + 4 / r ** 2)
     f_sigma_rr = lambda r: 1 / 3 * (1 - 4 / r ** 2)
 
+    rs_ = np.linspace(1.05, 1.95, 256)
     analytic_sigma_tt = []
     analytic_sigma_rr = []
-    for r in rs:
+    for r in rs_:
         analytic_sigma_tt.append(f_sigma_tt(r))
         analytic_sigma_rr.append(f_sigma_rr(r))
 
@@ -97,7 +98,7 @@ if __name__=="__main__":
     ax.set_title(r"$\sigma_{\theta\theta}$ vs $r$", fontsize=24)
     ax.set_xlabel(r'$r$', fontsize=18)
     ax.set_ylabel(r'$\sigma_{\theta \theta}$', fontsize=18)
-    ax.plot(rs, analytic_sigma_tt, 'k--', label="Analytic", linewidth=2, alpha=0.7)
+    ax.plot(rs_, analytic_sigma_tt, 'k--', label="Analytic", linewidth=2, alpha=0.9)
     ax.plot(rs, axi_sigma_tt, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
     ax.plot(rs, pl_str_sigma_tt_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
     ax.plot(rs, pl_str_sigma_tt_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
@@ -115,7 +116,7 @@ if __name__=="__main__":
     ax.set_title(r"$\sigma_{rr}$ vs $r$", fontsize=24)
     ax.set_xlabel(r'$r$', fontsize=18)
     ax.set_ylabel(r'$\sigma_{rr}$', fontsize=18)
-    ax.plot(rs, analytic_sigma_rr, 'k--', label="Analytic", linewidth=2, alpha=0.7)
+    ax.plot(rs_, analytic_sigma_rr, 'k--', label="Analytic", linewidth=2, alpha=0.9)
     ax.plot(rs, axi_sigma_rr, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
     ax.plot(rs, pl_str_sigma_rr_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
     ax.plot(rs, pl_str_sigma_rr_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
