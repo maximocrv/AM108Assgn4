@@ -1,0 +1,11 @@
+Microsoft (R) Incremental Linker Version 14.41.34120.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:feap.exe 
+-subsystem:console 
+/Force 
+plane.obj 
+feapl_400m_intel.lib 
+feapl_400m_intel.lib(feaplibd.obj) : warning LNK4006: _ELMT01 already defined in plane.obj; second definition ignored
+feapl_400m_intel.lib(pmacr1d.obj) : error LNK2001: unresolved external symbol _WATCH
+feap.exe : warning LNK4088: image being generated due to /FORCE option; image may not run

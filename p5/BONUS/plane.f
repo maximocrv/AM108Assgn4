@@ -119,21 +119,22 @@ C
       ! Call BMAT
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
       ! Transform B to obtain Bv_bar
-      DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
-          
-          Bv_bar(1,2*I-1) = column_1
-          Bv_bar(2,2*I-1) = column_1
-          Bv_bar(3,2*I-1) = column_1
-          Bv_bar(1,2*I) = column_2
-          Bv_bar(2,2*I) = column_2
-          Bv_bar(3,2*I) = column_2
-          Bv_bar(4,2*I-1) = 0
-          Bv_bar(4,2*I) = 0
-      END DO 
       
-      ! Call shape2d with 0.d0, 0.d0 for SG and TG
+C---- INITALIZE Bv_bar
+      DO I=1,NST
+          DO J=1,4
+              Bv_bar(J,I) = 0.d0
+          END DO
+      END DO
+      
+      DO I=1,NEL   
+          Bv_bar(1,2*I-1) = B(1,2*I-1) + B(2,2*I-1)
+          Bv_bar(2,2*I-1) = B(1,2*I-1) + B(2,2*I-1)
+          Bv_bar(3,2*I-1) = B(1,2*I-1) + B(2,2*I-1)
+          Bv_bar(1,2*I) = B(2,2*I)
+          Bv_bar(2,2*I) = B(2,2*I)
+          Bv_bar(3,2*I) = B(2,2*I)
+      END DO 
      
       ! Integration order
       IF (NEL == 4) THEN 
@@ -159,8 +160,16 @@ C---- DERIVATIVES 'SHP' AND JACOBIAN 'XSJ'
       ! SET UP THE STRAIN-DISPLACEMENT MATRIX 'B(NSDM,NST)'.
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
       
-      ! SET UP THE Bv MATRIX
-      ! Transform B to obtain Bv_bar
+      ! SET UP THE Bv MATRIX 
+C---- INITALIZE Bv and B_BAR
+      DO I=1,NST
+          DO J=1,4
+              Bv(J,I) = 0.d0
+              B_BAR(J,I) = 0.d0
+          END DO
+      END DO
+      
+      ! Transform B to obtain Bv
       DO I=1,NEL   
           column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
           column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
@@ -171,8 +180,6 @@ C---- DERIVATIVES 'SHP' AND JACOBIAN 'XSJ'
           Bv(1,2*I) = column_2
           Bv(2,2*I) = column_2
           Bv(3,2*I) = column_2
-          Bv(4,2*I-1) = 0
-          Bv(4,2*I) = 0
       END DO 
       
       ! OBTAIN B_BAR
@@ -294,6 +301,14 @@ C
       ! SET UP Bv_bar
       ! Call BMAT
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
+      
+C---- INITALIZE Bv_bar
+      DO I=1,NST
+          DO J=1,4
+              Bv_bar(J,I) = 0.d0
+          END DO
+      END DO
+          
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
           column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
@@ -305,8 +320,6 @@ C
           Bv_bar(1,2*I) = column_2
           Bv_bar(2,2*I) = column_2
           Bv_bar(3,2*I) = column_2
-          Bv_bar(4,2*I-1) = 0
-          Bv_bar(4,2*I) = 0
       END DO 
 
       ! Integration order
@@ -324,9 +337,17 @@ C---- (SEE ISW=3)
       CALL SHAP2D(SG(L),TG(L),XL,SHP,XSJ,NDM,NEL,IX,.TRUE.)
 C---- WITH THIS SET UP STRAIN-DISPLACEMENT MATRIX 'B(NSDM,NST)'
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
-      
+
+C---- INITALIZE Bv and B_BAR
+      DO I=1,NST
+          DO J=1,4
+              Bv(J,I) = 0.d0
+              B_BAR(J,I) = 0.d0
+          END DO
+      END DO
+
       ! SET UP THE Bv MATRIX
-      ! Transform B to obtain Bv_bar
+      ! Transform B to obtain Bv
       DO I=1,NEL   
           column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
           column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
@@ -337,8 +358,6 @@ C---- WITH THIS SET UP STRAIN-DISPLACEMENT MATRIX 'B(NSDM,NST)'
           Bv(1,2*I) = column_2
           Bv(2,2*I) = column_2
           Bv(3,2*I) = column_2
-          Bv(4,2*I-1) = 0
-          Bv(4,2*I) = 0
       END DO 
       
       ! OBTAIN B_BAR
@@ -417,6 +436,14 @@ C----        AND NQP=3  IF NEL >4
       ! SET UP Bv_bar
       ! Call BMAT
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
+      
+C---- INITALIZE Bv_bar
+      DO I=1,NST
+          DO J=1,4
+              Bv_bar(J,I) = 0.d0
+          END DO
+      END DO
+          
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
           column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
@@ -428,8 +455,6 @@ C----        AND NQP=3  IF NEL >4
           Bv_bar(1,2*I) = column_2
           Bv_bar(2,2*I) = column_2
           Bv_bar(3,2*I) = column_2
-          Bv_bar(4,2*I-1) = 0
-          Bv_bar(4,2*I) = 0
       END DO 
           
       ! Integration order
@@ -455,6 +480,14 @@ C---- AT CURRENT GAUSS POINT 'L'
 C---- WITH THIS SET UP STRAIN DISPLACEMENT MATRIX 'B(NSDM,NST)'
       CALL BMAT(B,SHP,XL,XJC,NEL,NDM,NST,MODE)
       
+C---- INITALIZE Bv and B_BAR
+      DO I=1,NST
+          DO J=1,4
+              Bv(J,I) = 0.d0
+              B_BAR(J,I) = 0.d0
+          END DO
+      END DO
+      
       ! SET UP THE Bv MATRIX
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
@@ -467,8 +500,6 @@ C---- WITH THIS SET UP STRAIN DISPLACEMENT MATRIX 'B(NSDM,NST)'
           Bv(1,2*I) = column_2
           Bv(2,2*I) = column_2
           Bv(3,2*I) = column_2
-          Bv(4,2*I-1) = 0
-          Bv(4,2*I) = 0
       END DO 
       
       ! OBTAIN B_BAR
@@ -539,7 +570,7 @@ C----                   = 1.0 FOR PLANE STRAIN/PLANE STRESS (MODE=1 OR 2)
 C---- INITALIZE
       DO 10 I=1,NST
       DO 10 J=1,4
-      B(J,I) = 0.d0
+          B(J,I) = 0.d0
 10    CONTINUE
 C---- COMPLETE
 c---- LEAVE FIRST ROW OF B (CORRESP TO EPS_33) AS ZEROS FOR PLANE STRAIN / PLANE STRESS
