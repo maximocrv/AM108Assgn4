@@ -1,4 +1,4 @@
-FEAP : Incompressible beam with end traction: 16x8 elements
+FEAP : Cantilever beam with end traction: 16x8 elements
   153  128    1    2    2    4    4    1    5    0    0    0    
 COOR
     1    9       0.0      -1.0

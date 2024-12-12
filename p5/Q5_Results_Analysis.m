@@ -315,3 +315,10 @@ fprintf('The 8-elem mesh gives a tip deflection of %.4f mm with an error of %.4f
 fprintf('The 2-elem quad mesh gives a tip deflection of %.4f mm with an error of %.4f %%.\n',v_tip_2_elem_quad, 100*abs((v_tip_2_elem_quad-v_tip_theo)/v_tip_theo));
 fprintf('The 8-elem mesh with different BCs gives a tip deflection of %.4f mm with an error of %.4f %%.\n',v_tip_8_elem_bcs, 100*abs((v_tip_8_elem_bcs-v_tip_theo)/v_tip_theo));
 fprintf('The mesh with distorted element gives a tip deflection of %.4f mm with an error of %.4f %%.\n',v_tip_distorted, 100*abs((v_tip_distorted-v_tip_theo)/v_tip_theo));
+
+
+%% BONUS
+nu = 0.499;
+% vertical tip deflection
+v_tip_theo = P/(6*E/(1-nu^2)*I)*((L-L)^3-L^3+L*((4+5*nu/(1-nu))*c^2 + 3*L^2))
+

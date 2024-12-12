@@ -128,18 +128,13 @@ C---- INITALIZE Bv_bar
       END DO
       
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
-          
-          Bv_bar(1,2*I-1) = column_1
-          Bv_bar(2,2*I-1) = column_1
-          Bv_bar(3,2*I-1) = column_1
-          Bv_bar(1,2*I) = column_2
-          Bv_bar(2,2*I) = column_2
-          Bv_bar(3,2*I) = column_2
+          Bv_bar(1,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(2,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(3,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(1,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(2,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(3,2*I) = 0.33333333*B(3,2*I)
       END DO 
-      
-      ! Call shape2d with 0.d0, 0.d0 for SG and TG
      
       ! Integration order
       IF (NEL == 4) THEN 
@@ -176,8 +171,8 @@ C---- INITALIZE Bv and B_BAR
       
       ! Transform B to obtain Bv
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
+          column_1 = 0.3333333333*(B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1))
+          column_2 = 0.3333333333*(B(1,2*I) + B(2,2*I) + B(3,2*I))
           
           Bv(1,2*I-1) = column_1
           Bv(2,2*I-1) = column_1
@@ -316,15 +311,12 @@ C---- INITALIZE Bv_bar
           
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
-          
-          Bv_bar(1,2*I-1) = column_1
-          Bv_bar(2,2*I-1) = column_1
-          Bv_bar(3,2*I-1) = column_1
-          Bv_bar(1,2*I) = column_2
-          Bv_bar(2,2*I) = column_2
-          Bv_bar(3,2*I) = column_2
+          Bv_bar(1,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(2,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(3,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(1,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(2,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(3,2*I) = 0.33333333*B(3,2*I)
       END DO 
 
       ! Integration order
@@ -354,8 +346,8 @@ C---- INITALIZE Bv and B_BAR
       ! SET UP THE Bv MATRIX
       ! Transform B to obtain Bv
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
+          column_1 = 0.3333333333*(B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1))
+          column_2 = 0.3333333333*(B(1,2*I) + B(2,2*I) + B(3,2*I))
           
           Bv(1,2*I-1) = column_1
           Bv(2,2*I-1) = column_1
@@ -451,15 +443,12 @@ C---- INITALIZE Bv_bar
           
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
-          
-          Bv_bar(1,2*I-1) = column_1
-          Bv_bar(2,2*I-1) = column_1
-          Bv_bar(3,2*I-1) = column_1
-          Bv_bar(1,2*I) = column_2
-          Bv_bar(2,2*I) = column_2
-          Bv_bar(3,2*I) = column_2
+          Bv_bar(1,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(2,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(3,2*I-1) = 0.33333333*(B(1,2*I-1) + B(2,2*I-1))
+          Bv_bar(1,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(2,2*I) = 0.33333333*B(3,2*I)
+          Bv_bar(3,2*I) = 0.33333333*B(3,2*I)
       END DO 
           
       ! Integration order
@@ -496,8 +485,8 @@ C---- INITALIZE Bv and B_BAR
       ! SET UP THE Bv MATRIX
       ! Transform B to obtain Bv_bar
       DO I=1,NEL   
-          column_1 = B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1)
-          column_2 = B(1,2*I) + B(2,2*I) + B(3,2*I)
+          column_1 = 0.3333333333*(B(1,2*I-1) + B(2,2*I-1) + B(3,2*I-1))
+          column_2 = 0.3333333333*(B(1,2*I) + B(2,2*I) + B(3,2*I))
           
           Bv(1,2*I-1) = column_1
           Bv(2,2*I-1) = column_1
@@ -575,7 +564,7 @@ C----                   = 1.0 FOR PLANE STRAIN/PLANE STRESS (MODE=1 OR 2)
 C---- INITALIZE
       DO 10 I=1,NST
       DO 10 J=1,4
-      B(J,I) = 0.d0
+          B(J,I) = 0.d0
 10    CONTINUE
 C---- COMPLETE
 c---- LEAVE FIRST ROW OF B (CORRESP TO EPS_33) AS ZEROS FOR PLANE STRAIN / PLANE STRESS
