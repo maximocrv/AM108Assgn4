@@ -4,15 +4,15 @@ from IPython import embed
 import matplotlib.pyplot as plt
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     with open("metadata.pkl", "rb") as f:
         fpin = pickle.load(f)
 
     # exract all node ids and coordinates
     coords = {}
-    coord_data = fpin['COOR']
+    coord_data = fpin["COOR"]
     line_ind = 0
-    n_lines = len(fpin['COOR'])
+    n_lines = len(fpin["COOR"])
     while True:
         line1 = coord_data[line_ind]
         line1 = [float(x) for x in line1.split()]
@@ -76,20 +76,21 @@ if __name__=="__main__":
         if line_ind == n_lines:
             break
 
-    line_list = [[(x1, x2), (x2, x3), (x3, x4), (x4, x1)] for x1, x2, x3, x4 in ele_dict.values()]
+    line_list = [
+        [(x1, x2), (x2, x3), (x3, x4), (x4, x1)] for x1, x2, x3, x4 in ele_dict.values()
+    ]
     line_list = [x for ele in line_list for x in ele]
 
     f, ax = plt.subplots(figsize=(10, 10))
-    ax.scatter(*np.array(list(coords.values())).T, marker='o', color='r')
+    ax.scatter(*np.array(list(coords.values())).T, marker="o", color="r")
     for line in line_list:
         n1 = coords[line[0]]
         n2 = coords[line[1]]
-        ax.plot([n1[0], n2[0]], [n1[1], n2[1]], 'k')
+        ax.plot([n1[0], n2[0]], [n1[1], n2[1]], "k")
 
-    ax.set_aspect('equal', adjustable='box')
+    ax.set_aspect("equal", adjustable="box")
     plt.tight_layout()
 
-    f.savefig('q4a_mesh.pdf', bbox_inches='tight')
+    f.savefig("q4a_mesh.pdf", bbox_inches="tight")
 
     embed()
-

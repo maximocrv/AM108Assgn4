@@ -4,8 +4,8 @@ from sympy import *
 from IPython import embed
 
 
-if __name__=="__main__":
-    x, x1, x2 = symbols('x x1 x2')
+if __name__ == "__main__":
+    x, x1, x2 = symbols("x x1 x2")
 
     eq1 = (x - x2) / (x1 - x2)
     eq2 = (x - x1) / (x2 - x1)

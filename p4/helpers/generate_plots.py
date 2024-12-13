@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from IPython import embed
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     rs = np.linspace(1.05, 1.95, 10)
 
     # reading pl strain results
@@ -36,11 +36,13 @@ if __name__=="__main__":
             else:
                 continue
 
-            A = np.array([[np.cos(theta), np.sin(theta)], [-np.sin(theta), np.cos(theta)]])
+            A = np.array(
+                [[np.cos(theta), np.sin(theta)], [-np.sin(theta), np.cos(theta)]]
+            )
             sigma_B = np.array([[sigma_xx, sigma_xy], [sigma_xy, sigma_yy]])
             sigma_Bprime = A @ sigma_B @ A.T
-            sigma_tt = sigma_Bprime[1,1]
-            sigma_rr = sigma_Bprime[0,0]
+            sigma_tt = sigma_Bprime[1, 1]
+            sigma_rr = sigma_Bprime[0, 0]
 
             if ele in np.arange(1, 11):
                 pl_str_sigma_tt_1.append(sigma_tt)
@@ -80,10 +82,10 @@ if __name__=="__main__":
     axi_sigma_rr = np.array(axi_sigma_rr)
 
     # compute analytic results
-    f_sigma_tt = lambda r: 1 / 3 * (1 + 4 / r ** 2)
-    f_sigma_rr = lambda r: 1 / 3 * (1 - 4 / r ** 2)
+    f_sigma_tt = lambda r: 1 / 3 * (1 + 4 / r**2)
+    f_sigma_rr = lambda r: 1 / 3 * (1 - 4 / r**2)
 
-    rs_ = np.linspace(1.05, 1.95, 256)
+    rs_ = np.linspace(1.05, 1.95, 10)
     analytic_sigma_tt = []
     analytic_sigma_rr = []
     for r in rs_:
@@ -94,39 +96,75 @@ if __name__=="__main__":
     analytic_sigma_rr = np.array(analytic_sigma_rr)
 
     # sigma_tt plots
-    f, ax = plt.subplots(figsize=(16,9))
-    ax.set_title(r"$\sigma_{\theta\theta}$ vs $r$", fontsize=24)
-    ax.set_xlabel(r'$r$', fontsize=18)
-    ax.set_ylabel(r'$\sigma_{\theta \theta}$', fontsize=18)
-    ax.plot(rs_, analytic_sigma_tt, 'k--', label="Analytic", linewidth=2, alpha=0.9)
-    ax.plot(rs, axi_sigma_tt, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
-    ax.plot(rs, pl_str_sigma_tt_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
-    ax.plot(rs, pl_str_sigma_tt_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
-    # ax.plot(rs, pl_str_sigma_tt_3, 'g--', label=r"Plane-$\varepsilon$ ($\theta = 15 \pi / 32$)")
-    ax.tick_params(axis='both', which='major', labelsize=14)
-    ax.tick_params(axis='both', which='minor', labelsize=14)
-    ax.legend(fontsize=14)
-    plt.tight_layout()
-    plt.grid()
-    f.savefig("sigma_tt.pdf")
-    plt.close()
+    # f, ax = plt.subplots(figsize=(16,9))
+    # ax.set_title(r"$\sigma_{\theta\theta}$ vs $r$", fontsize=24)
+    # ax.set_xlabel(r'$r$', fontsize=18)
+    # ax.set_ylabel(r'$\sigma_{\theta \theta}$', fontsize=18)
+    # ax.plot(rs_, analytic_sigma_tt, 'k--', label="Analytic", linewidth=2, alpha=0.9)
+    # ax.plot(rs, axi_sigma_tt, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
+    # ax.plot(rs, pl_str_sigma_tt_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
+    # ax.plot(rs, pl_str_sigma_tt_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
+    # # ax.plot(rs, pl_str_sigma_tt_3, 'g--', label=r"Plane-$\varepsilon$ ($\theta = 15 \pi / 32$)")
+    # ax.tick_params(axis='both', which='major', labelsize=14)
+    # ax.tick_params(axis='both', which='minor', labelsize=14)
+    # ax.legend(fontsize=14)
+    # plt.tight_layout()
+    # plt.grid()
+    # f.savefig("sigma_tt.pdf")
+    # plt.close()
 
-    # sigma_rr plots
-    f, ax = plt.subplots(figsize=(16,9))
-    ax.set_title(r"$\sigma_{rr}$ vs $r$", fontsize=24)
-    ax.set_xlabel(r'$r$', fontsize=18)
-    ax.set_ylabel(r'$\sigma_{rr}$', fontsize=18)
-    ax.plot(rs_, analytic_sigma_rr, 'k--', label="Analytic", linewidth=2, alpha=0.9)
-    ax.plot(rs, axi_sigma_rr, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
-    ax.plot(rs, pl_str_sigma_rr_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
-    ax.plot(rs, pl_str_sigma_rr_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
-    # ax.plot(rs, pl_str_sigma_rr_3, 'g--', label=r"Plane-$\varepsilon$ ($\theta = 15 \pi / 32$)")
-    ax.tick_params(axis='both', which='major', labelsize=14)
-    ax.tick_params(axis='both', which='minor', labelsize=14)
-    ax.legend(fontsize=14)
-    plt.tight_layout()
-    plt.grid()
-    f.savefig("sigma_rr.pdf")
-    plt.close()
+    # # sigma_rr plots
+    # f, ax = plt.subplots(figsize=(16,9))
+    # ax.set_title(r"$\sigma_{rr}$ vs $r$", fontsize=24)
+    # ax.set_xlabel(r'$r$', fontsize=18)
+    # ax.set_ylabel(r'$\sigma_{rr}$', fontsize=18)
+    # ax.plot(rs_, analytic_sigma_rr, 'k--', label="Analytic", linewidth=2, alpha=0.9)
+    # ax.plot(rs, axi_sigma_rr, 'g-.', label="Axisymmetric", linewidth=2, alpha=0.7)
+    # ax.plot(rs, pl_str_sigma_rr_1, 'r-.', label=r"Plane-$\varepsilon$ ($\theta = \pi / 32$)", linewidth=2, alpha=0.7)
+    # ax.plot(rs, pl_str_sigma_rr_2, 'b:', label=r"Plane-$\varepsilon$ ($\theta = 7 \pi / 32$)", linewidth=2, alpha=0.7)
+    # # ax.plot(rs, pl_str_sigma_rr_3, 'g--', label=r"Plane-$\varepsilon$ ($\theta = 15 \pi / 32$)")
+    # ax.tick_params(axis='both', which='major', labelsize=14)
+    # ax.tick_params(axis='both', which='minor', labelsize=14)
+    # ax.legend(fontsize=14)
+    # plt.tight_layout()
+    # plt.grid()
+    # f.savefig("sigma_rr.pdf")
+    # plt.close()
+
+    print("sigma_tt errors")
+    for r, sigma_tt_exact, sigma_tt_1, sigma_tt_2, sigma_tt_3, sigma_tt_axi in zip(
+        rs,
+        analytic_sigma_tt,
+        pl_str_sigma_tt_1,
+        pl_str_sigma_tt_2,
+        pl_str_sigma_tt_3,
+        axi_sigma_tt,
+    ):
+        pl_str_err_1 = np.abs(sigma_tt_exact - sigma_tt_1) / np.abs(sigma_tt_exact)
+        pl_str_err_2 = np.abs(sigma_tt_exact - sigma_tt_2) / np.abs(sigma_tt_exact)
+        pl_str_err_3 = np.abs(sigma_tt_exact - sigma_tt_3) / np.abs(sigma_tt_exact)
+        axi_err = np.abs(sigma_tt_exact - sigma_tt_axi) / np.abs(sigma_tt_exact)
+
+        print(
+            f"{r:.2f} & {sigma_tt_exact:.4f} & {sigma_tt_3:.4f} & {pl_str_err_3 * 100:.4f} \% & {sigma_tt_2:.4f} & {pl_str_err_2 * 100:.4f}\% & {sigma_tt_1:.4f} & {pl_str_err_1 * 100:.4f}\% & {sigma_tt_axi:.4f} & {axi_err * 100:.4f}\% \\"
+        )
+
+    print("sigma_rr errors")
+    for r, sigma_rr_exact, sigma_rr_1, sigma_rr_2, sigma_rr_3, sigma_rr_axi in zip(
+        rs,
+        analytic_sigma_rr,
+        pl_str_sigma_rr_1,
+        pl_str_sigma_rr_2,
+        pl_str_sigma_rr_3,
+        axi_sigma_rr,
+    ):
+        pl_str_err_1 = np.abs(sigma_rr_exact - sigma_rr_1) / np.abs(sigma_rr_exact)
+        pl_str_err_2 = np.abs(sigma_rr_exact - sigma_rr_2) / np.abs(sigma_rr_exact)
+        pl_str_err_3 = np.abs(sigma_rr_exact - sigma_rr_3) / np.abs(sigma_rr_exact)
+        axi_err = np.abs(sigma_rr_exact - sigma_rr_axi) / np.abs(sigma_rr_exact)
+
+        print(
+            f"{r:.2f} & {sigma_rr_exact:.4f} & {sigma_rr_3:.4f} & {pl_str_err_3 * 100:.4f} \% & {sigma_rr_2:.4f} & {pl_str_err_2 * 100:.4f}\% & {sigma_rr_1:.4f} & {pl_str_err_1 * 100:.4f}\% & {sigma_rr_axi:.4f} & {axi_err * 100:.4f}\%"
+        )
 
     embed()

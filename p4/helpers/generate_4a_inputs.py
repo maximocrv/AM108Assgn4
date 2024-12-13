@@ -149,7 +149,7 @@ if __name__ == "__main__":
         line1 = ele1 + ele2 + ele3
 
         # consistent nodal loads
-        if node  == 1:
+        if node == 1:
             f1 = dtheta * np.sin(thetas[i]) / 2
             f2 = dtheta * np.cos(thetas[i]) / 2
 
@@ -184,7 +184,7 @@ if __name__ == "__main__":
         # node string
         node += 11
 
-    with open('metadata.pkl', 'wb') as f:
+    with open("metadata.pkl", "wb") as f:
         pickle.dump(fpin, f)
 
     embed()
